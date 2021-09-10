@@ -68,13 +68,12 @@ header {
   outline: none;
 }
 
-section {
+.posts-section {
   width: 100%;
   height:auto;
 }
 
 .posts-container {
-  padding: 2em 0;
   width: 65%;
   margin: 0 auto;
 }
@@ -87,6 +86,7 @@ section {
   border-radius: 2px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em;
 }
 
 .post-content-top {
@@ -117,4 +117,123 @@ section {
 .post-text {
   color: #B6B6B6;
   padding: 1em 0;
+}
+
+.post-title {
+  text-decoration: none;
+  color: #313131;
+}
+
+.create-post-section {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em .5em;
+  /* border: 1px solid red; */
+}
+
+.label-newest-news {
+  font-size: 2.2rem;
+  color: #313131;
+}
+
+.button-create-post {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background: linear-gradient(to left,#3EA1DB, #574AE8);
+  border: none;
+  border-radius: 10px;
+  padding: 1em 3em;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  height: 400px;
+  width: 700px;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 2;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.modal-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .5em 1em;
+  font-size: 1.3rem;
+}
+
+.modal-low-opacity {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.modal-inputs-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-button-create {
+  width: 95%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  background: linear-gradient(to left,#3EA1DB, #574AE8);
+  border: none;
+  border-radius: 5px;
+  padding: .5em;
+  color: #F4F5F7;
+  font-family: inherit;
+  cursor: pointer;
+  margin: 1em 0;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.4);
+}
+
+.modal-close-icon {
+  max-width: 45px;
+  cursor: pointer;
+}
+
+.input {
+  border: 2px solid #B6B6B6;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 0.85rem;
+  margin: .3em 0;
+  outline: none;
+  transition: box-shadow .1s ease;
+}
+
+.input:focus {
+  box-shadow: 0px 0px 5px #574AE8;
+}
+
+.input-post-content {
+  outline: none;
+  resize: none;
+}
+
+.hidden {
+  display: none;
 }
