@@ -77,8 +77,9 @@ header {
 }
 
 .img-search-bar {
-    width: 3%;
+    width: 20px;
     margin: 1em;
+    cursor: pointer;
 }
 
 .input-search-bar {
@@ -187,24 +188,11 @@ header {
     justify-content: space-between;
     align-items: left;
     padding: 3em 0.5em;
-    /* border: 1px solid red; */
 }
 
 .label-newest-news {
     font-size: 2.2rem;
     color: #313131;
-}
-
-.button-create-post {
-    color: #fff;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    background: linear-gradient(to left, #3ea1db, #574ae8);
-    border: none;
-    border-radius: 10px;
-    padding: 1em 3em;
-    cursor: pointer;
-    font-family: inherit;
 }
 
 .modal {

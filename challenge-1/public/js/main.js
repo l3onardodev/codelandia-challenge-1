@@ -1,14 +1,7 @@
 const searchInput = document.querySelector(".input-search-bar");
 const searchContainer = document.querySelector(".search-bar-container");
 
-const favIcon = document.querySelector(".fav-icon");
-
-//modal feature
-const buttonCreatePost = document.querySelector(".button-create-post");
-const modal = document.querySelector(".modal");
-const modalLowOpacity = document.querySelector(".modal-low-opacity");
-
-const closeModalButton = document.querySelector(".modal-close-icon");
+const favIcon = document.querySelectorAll(".fav-icon");
 
 //todo: maybe this is not the perfect solution.
 document.addEventListener("click", () => {
@@ -19,30 +12,23 @@ document.addEventListener("click", () => {
     }
 });
 
-favIcon.addEventListener("mouseover", (element) => {
-    if (favIcon.classList.contains("favorite")) return;
-    favIcon.src = "images/fav-icon-filled.png";
-    favIcon.style.transform = "scale(1.3)";
-});
+//adds eventListeners to all favIcons
+favIcon.forEach((element, index) => {
+    favIcon[index].addEventListener("mouseover", (element) => {
+        if (favIcon[index].classList.contains("favorite")) return;
+        favIcon[index].src = "images/fav-icon-filled.png";
+        favIcon[index].style.transform = "scale(1.3)";
+    });
 
-favIcon.addEventListener("mouseleave", () => {
-    if (favIcon.classList.contains("favorite")) return;
-    favIcon.src = "images/fav-icon.png";
-    favIcon.style.transform = "scale(1)";
-});
+    favIcon[index].addEventListener("mouseleave", () => {
+        if (favIcon[index].classList.contains("favorite")) return;
+        favIcon[index].src = "images/fav-icon.png";
+        favIcon[index].style.transform = "scale(1)";
+    });
 
-favIcon.addEventListener("click", () => {
-    favIcon.classList.contains("favorite")
-        ? favIcon.classList.remove("favorite")
-        : favIcon.classList.add("favorite");
-});
-
-buttonCreatePost.addEventListener("click", function () {
-    modal.classList.remove("hidden");
-    modalLowOpacity.classList.remove("hidden");
-});
-
-closeModalButton.addEventListener("click", function () {
-    modal.classList.toggle("hidden");
-    modalLowOpacity.classList.toggle("hidden");
+    favIcon[index].addEventListener("click", () => {
+        favIcon[index].classList.contains("favorite")
+            ? favIcon[index].classList.remove("favorite")
+            : favIcon[index].classList.add("favorite");
+    });
 });
