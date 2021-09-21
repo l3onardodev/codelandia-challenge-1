@@ -26,7 +26,7 @@ favIcon.forEach((element, index) => {
     favIcon[index].addEventListener('mouseover', (element) => {
         if (favIcon[index].classList.contains('favorite')) return;
         favIcon[index].src = './public/images/fav-icon-filled.png';
-        favIcon[index].style.transform = 'scale(1.3)';
+        favIcon[index].style.transform = 'scale(1.2)';
     });
 
     favIcon[index].addEventListener('mouseleave', () => {
