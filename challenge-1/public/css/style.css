@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend+Deca:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend+Deca:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @keyframes opacityAnimation {
     from {
@@ -28,7 +28,7 @@
 body {
     width: auto;
     height: 100vh;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f3f5f7;
 }
 
@@ -36,7 +36,7 @@ header {
     height: 230px;
     width: auto;
     background: linear-gradient(to left, #3ea1db, #574ae8);
-    font-family: "Lexend Deca", sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .header-content {
@@ -83,7 +83,7 @@ header {
 }
 
 .input-search-bar {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     width: 100%;
     height: 100%;
     border: none;
@@ -163,7 +163,7 @@ header {
 }
 
 .post-content-text-middle {
-    font-family: "Lexend Deca", sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
 }
@@ -193,69 +193,6 @@ header {
 .label-newest-news {
     font-size: 2.2rem;
     color: #313131;
-}
-
-.modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    right: 0;
-    bottom: 0;
-    height: 400px;
-    width: 700px;
-    border-radius: 10px;
-    background-color: #fff;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-}
-
-.modal-top-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0.5em 1em;
-    font-size: 1.3rem;
-}
-
-.modal-low-opacity {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0, 0.8);
-}
-
-.modal-inputs-container {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-}
-
-.modal-button-create {
-    width: 95%;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-size: 1.05rem;
-    background: linear-gradient(to left, #3ea1db, #574ae8);
-    border: none;
-    border-radius: 5px;
-    padding: 0.5em;
-    color: #f4f5f7;
-    font-family: inherit;
-    cursor: pointer;
-    margin: 1em 0;
-    box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.4);
-}
-
-.modal-close-icon {
-    max-width: 45px;
-    cursor: pointer;
 }
 
 .input {
